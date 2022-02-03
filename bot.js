@@ -3,7 +3,7 @@ const client = new Discord.Client()
 const request = require('request')
 const config = require("./config.json")
 
-// selam ben novasy
+// hi im Atlas
     client.on("ready", () => {
         client.user.setPresence({ activity: { name: config.durum }, status: "idle" });
         client.channels.cache.get(config.voicekanal).join().catch(x => x)
